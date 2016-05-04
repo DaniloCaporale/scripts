@@ -28,6 +28,30 @@ sudo apt-get install kdevelop
 sudo apt-get install emacs24
 sudo apt-get install texstudio
 
+# terminator
+sudo apt-get install terminator
+
+# zsh and oh-my-zsh + guake
+if command_exists zsh --version; then
+    echo 'Shell combo (zsh+oh-my-zsh+guake) already installed'
+else
+    echo 'TODO: install mendeley.'
+    sudo apt-get install zsh
+    sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+    # https://github.com/Guake/guake
+    git clone https://github.com/Guake/guake.git
+    cd guake
+    ./dev.sh --install
+    make
+    sudo make install
+    cd ..
+    rm -rf guake
+    echo 'Guake is fine!'
+    sleep 5
+fi
+
+
+
 # mendeley
 if command_exists mendeleydesktop --help; then
     echo 'mendeley already installed'
@@ -37,7 +61,7 @@ fi
 
 
 # git
-sudo apt-get install git
+sudo apt-get install git git-gui gitk
 
 # cmake
 sudo apt-get install cmake
