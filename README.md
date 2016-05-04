@@ -1,6 +1,6 @@
 # scripts
 
-To install all the neede just run
+To install all the needed just run
 
     bash my_fresh_ubuntu.sh
     
