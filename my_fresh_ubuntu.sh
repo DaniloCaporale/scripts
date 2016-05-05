@@ -28,6 +28,16 @@ sudo apt-get install kdevelop
 sudo apt-get install emacs24
 sudo apt-get install texstudio
 
+# latex
+sudo apt-get install texlive-full
+
+# check if ~/texmf exists
+# sudo apt-get install xzdec
+# sudo apt-get install perl-tk # for tlmgr gui
+# tlmgr init-usertree
+# tlmgr --gui
+# sudo tlmgr update --all
+
 # terminator
 sudo apt-get install terminator
 
