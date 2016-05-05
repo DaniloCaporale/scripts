@@ -50,7 +50,9 @@ else
     sleep 5
 fi
 
-
+# python-pip and colorlog
+sudo apt-get install python-pip
+pip install colorlog
 
 # mendeley
 if command_exists mendeleydesktop --help; then
@@ -59,9 +61,13 @@ else
     echo 'TODO: install mendeley.'
 fi
 
+# teamviewer
+# sudo apt-get install zlib1g libxtst6 libxrender1 libxrandr2 libxinerama1 libxfixes3 libxext6 libxdamage1 libsm6 libpng12-0 libjpeg62 libfreetype6 libfontconfig1 libexpat1 libdbus-1-3 libasound2 libgcc1 libc6
+
 
 # git
 sudo apt-get install git git-gui gitk
+sudo apt-get install meld # graphic merge tool
 
 # cmake
 sudo apt-get install cmake
