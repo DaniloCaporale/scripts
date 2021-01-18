@@ -41,20 +41,20 @@ else
     sudo apt-get install zsh
     sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
     # https://github.com/Guake/guake
-    git clone https://github.com/Guake/guake.git
-    cd guake
-    ./dev.sh --install
-    make
-    sudo make install
-    cd ..
-    rm -rf guake
-    echo 'Guake is fine!'
+#    git clone https://github.com/Guake/guake.git
+#    cd guake
+#    ./dev.sh --install
+#    make
+#    sudo make install
+#    cd ..
+#    rm -rf guake
+#    echo 'Guake is fine!'
     sleep 5
 fi
 
 # python-pip and colorlog
-sudo apt-get install python-pip
-pip install colorlog
+#sudo apt-get install python-pip
+#pip install colorlog
 
 # # mendeley
 # if command_exists mendeleydesktop --help; then
@@ -92,7 +92,7 @@ cd tmp
       sudo make install
     cd ..
   cd ..
-cd ..  
+cd ..
 
 # Package manager
 # sudo apt-get install synaptic
